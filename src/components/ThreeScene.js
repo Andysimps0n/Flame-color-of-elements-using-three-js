@@ -34,7 +34,7 @@ const ThreeScene = (props) => {
     var height = window.innerHeight;
 
     var geometry0 = new particleFire.Geometry( fireRadius, fireHeight, particleCount );
-    var material0 = new particleFire.Material( { color: props.color } );
+    var material0 = new particleFire.Material( { color: (props.color == "0xff007b" ? 0xff007b : props.color) } );
     material0.setPerspective( camera.fov, height );
     var particleFireMesh0 = new THREE.Points( geometry0, material0 );
     scene.add( particleFireMesh0 );

@@ -16,10 +16,16 @@ canvas {
   border: 1px solid white;
 }
 
+.title {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 20px 0;
+}
 
 .outer-most-container {
   width: 50vw;
-  height: 105vh;
+  height: 100vh;
   padding: 5vh;
   margin: 10vh auto;
 }
@@ -41,12 +47,13 @@ canvas {
   color: white;
   margin: 0 auto;
   font-size:40px;
+  font-weight: 600;
 }
 
 .elements-grid {
   margin: 5% 0;
   width: 100%;
-  height: 50%;
+  height: 40%;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -65,10 +72,40 @@ canvas {
   color: rgb(247, 247, 247);
   font-size: 20px;
   font-weight: 600;
-  transition: all 0.1s;
 }
 
 .grid-element:hover {
   color: rgb(97, 97, 97);
 
+}
+
+.pagination {
+  width: 15%;
+  height: 4%;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.pagination-element {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: 2px solid rgb(37, 37, 37);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.pagination-darker {
+  background-color: #161616;
 }
