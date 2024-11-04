@@ -3,9 +3,9 @@ body {
   background-color: #000000;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
  
 canvas {
   border: 4px solid rgb(20, 20, 20);
@@ -19,7 +19,7 @@ canvas {
 
 .outer-most-container {
   width: 50vw;
-  height: 80vh;
+  height: 105vh;
   padding: 5vh;
   margin: 10vh auto;
 }

@@ -6,7 +6,7 @@ import particleFire from 'three-particle-fire';
 particleFire.install( { THREE: THREE } );
 
 
-const ThreeScene = () => {
+const ThreeScene = (props) => {
   const threeRef = useRef(null)
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const ThreeScene = () => {
     var height = window.innerHeight;
 
     var geometry0 = new particleFire.Geometry( fireRadius, fireHeight, particleCount );
-    var material0 = new particleFire.Material( { color: 0x22FF00 } );
+    var material0 = new particleFire.Material( { color: props.color } );
     material0.setPerspective( camera.fov, height );
     var particleFireMesh0 = new THREE.Points( geometry0, material0 );
     scene.add( particleFireMesh0 );
@@ -62,7 +62,7 @@ const ThreeScene = () => {
     return () => {
       renderer.domElement.remove();
     };
-  }, []);
+  }, [props.color]);
 
   return (
       <div className='border renderer-container'>
