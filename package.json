@@ -1,0 +1,19 @@
+{
+  "name": "chem2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.15",
+    "next": "15.0.2",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "three": "^0.170.0",
+    "three-particle-fire": "^0.1.0"
+  }
+}
